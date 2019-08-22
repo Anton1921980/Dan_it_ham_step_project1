@@ -6,7 +6,6 @@ width: 1280px;
   font-family: myriad-pro, sans-serif;
   width: 1280px;
   height: 1282px;
-  
 }
 .logo {
   font-size: 80px;
@@ -20,7 +19,6 @@ width: 1280px;
   color: #4bcaff;
   text-decoration: none;
 }
-
 .nav-top {
   background-color: #35444f;
   width: 1280px;
@@ -84,20 +82,26 @@ width: 1280px;
   padding-left: 63px;
   padding-top: 14px;
   padding-bottom: 14px;
+  width:344px;
 }
 .nav-left a {
   text-decoration: none;
   color: #485863;
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  -webkit-transition: all 1s ease-out;
 }
 .nav-left li:hover {
   background-color: #dbdbdb;
   color: #000000;
-  padding-left: 58px;
-  width: 284px;
+  width: 278px;     
 }
 .nav-left a:hover {
-  padding-left: 45px;
+  padding-left: 35px;
   color: #000000;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
 }
 .big-pic {
   border: 1px solid black;
