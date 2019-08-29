@@ -135,7 +135,10 @@ nav a {
     text-align: right;
     margin-left:125px;
     text-transform:capitalize;
+    display: inline-block;
 }
+
+
 .pic-up p>span:after{
    content: url(../images/Arrow@1X.png);
     display:inline-block;
