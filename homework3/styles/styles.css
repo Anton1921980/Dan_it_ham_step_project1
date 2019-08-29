@@ -2,11 +2,10 @@ body {
   font-family: Verdana;
 }
 .container {
-  width: 1366px;
-  height: 768px;
   background-image: url(../images/background.png);
   overflow: hidden;
-
+  width: 1366px;
+  height: 768px;
 }
 .head {
   margin-left: 155px;
@@ -17,7 +16,7 @@ body {
 .head-logo {
   cursor: pointer;
   background-repeat: no-repeat;
-   font-weight: bold;
+  font-weight: bold;
   text-transform: uppercase;
   display: inline-block;
 }
@@ -36,15 +35,14 @@ body {
   cursor: pointer;
 }
 .logo-text {
-  float: left;
-  width: 105px;
+  float: left;  
   line-height: 0.78;
   margin-top: 3px;
   margin-left: 12px;
+  width: 105px;
 }
 
-.logo-text > span {
-    
+.logo-text > span {    
   font-size: 18px;
 }
 .head-logo:hover {
@@ -69,11 +67,9 @@ nav {
   text-indent: 0; /*отступ слева*/
   text-align: center;
   line-height: 2.5;
-  z-index:10;
-}
+ }
 
-.pic {
-   
+.pic {   
   float: left;
   cursor: pointer;
   text-transform: capitalize;
@@ -83,24 +79,20 @@ nav {
   padding-bottom: 58px;  
   width: 307px;
   height: 250px;
-  position: relative;
- 
- 
+  position: relative; 
 }
 .pic:nth-last-of-type(-n+3){
-    bottom:10px;
+    bottom:10px;/*Корректируем отступ трех нижних окон*/
 }
 .pic img{
-    border: 2px solid transparent;
-    border-bottom:none;
-    border-image: linear-gradient(to top, transparent 0%, rgb(131, 177, 180) 100%);
-    border-image-slice: 1;
+  border: 2px solid transparent;
+  border-bottom:none;
+  border-image: linear-gradient(to top, transparent 0%, rgb(131, 177, 180) 100%);
+  border-image-slice: 1;
    overflow:hidden;
    width: 307px;
    box-shadow: 15px 15px 10px 10px rgba(0,0,0,0.5);
-  
 }
-
 .pic > div {
   margin-bottom: 150px;
 }
@@ -110,44 +102,41 @@ nav a {
   text-decoration: none;
   color: #ffffff;
   }
-.pic-menu>span {
-    text-align: right;
-    padding-left: 130px;
-    text-transform: capitalize;
-}
-.pic-menu {   
+
+.pic-up {   
   opacity:0;   
   color:transparent;
-  line-height: 1;
+  line-height: 1;  
+  text-align: left;
+  text-transform: lowercase;  
+  font-size:20px;  
+  display: inline-block;
   float: left;
   bottom: -43px;
   left: 0px;
   position: absolute;
-  text-align: left;
-  text-transform: lowercase;
   width: 307px;
   height: 0px;
-  font-size:20px;  
 }
 
-.pic-menu p{
+.pic-up p{
     font-size: 10px;
     margin-top:16px;
     margin-bottom:0;
     margin-left:21px;
 }
-.pic-menu p:last-child{
+.pic-up p:last-child{
  font-size:20px;
  margin-top:5px;
  
-  
 }
-.pic-menu p>span{
+.pic-up p>span{
     font-size:14px;
+    text-align: right;
     margin-left:125px;
     text-transform:capitalize;
 }
-.pic-menu p>span:after{
+.pic-up p>span:after{
    content: url(../images/Arrow@1X.png);
     display:inline-block;
     height:7px;
@@ -156,7 +145,7 @@ nav a {
 }
 
 
-.pic:hover .pic-menu {  
+.pic:hover .pic-up {  
     font-size: 10px;
     opacity:1;
     color: #ffffff;
@@ -164,9 +153,7 @@ nav a {
     height: 63px;
     width:311px;
     bottom:-45px;
-    overflow:hidden;
-    
-
+    overflow:hidden; 
     -moz-transition: all 1s;
     -o-transition: all 1s;
     -webkit-transition: all 1s;
