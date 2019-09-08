@@ -139,7 +139,7 @@ text-align: right;
     background-repeat: no-repeat;
     background-position: 12% center;
     background-color:#305db8;
-    border-radius:10px;    
+    border-radius:5px;    
     font-size: 16px;
     text-decoration:none;
 
@@ -153,7 +153,7 @@ text-align: right;
     background-repeat: no-repeat;
     background-position: 8% center;
     background-color: #df4a32;
-    border-radius:10px;
+    border-radius:5px;
     font-size: 16px;
     text-decoration:none;
 }
@@ -217,7 +217,7 @@ text-align: right;
 	
 	}
 .content h3 {
-    color: rgb(105, 103, 103,0.4);
+    color: rgb(105, 103, 103,0.7);
     font: 20px bold;
     margin: 5px 10px 5px 10px
 }
@@ -229,7 +229,7 @@ text-align: right;
     width: 36%;
     height: 1px;
     vertical-align: middle;
-    background: rgb(105, 103, 103,0.4);
+    background: rgb(105, 103, 103,0.15);
     margin: 5px 10px 5px 10px;
 }
 
@@ -247,7 +247,7 @@ text-align: right;
     
 .content form input[type="text"],
 .content form input[type="password"] {
-	border: 1px solid #c8c8c8;
+	border: 1px solid rgba(184, 184, 184,0.3);
     color: rgba(67, 67, 67);
     font: 14px sans-serif;
     margin: 9px 0px 0px 13px;
@@ -302,7 +302,7 @@ label{
     content: "";
     color: transparent;
     display: inline-block;
-    border: 1px solid #c8c8c8;
+    border: 1px solid rgb(200, 200, 200,0.5);
     border-radius:3px;
     font-size: 14px;
     line-height: 22px;
