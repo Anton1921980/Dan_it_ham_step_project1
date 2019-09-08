@@ -1,0 +1,323 @@
+body{
+background-image:  url(../images/back.png);
+background-size: 100%;
+margin:0;
+padding:0;
+font-family: Verdana, sans-serif;
+box-sizing: border-box;
+}
+
+header{
+background:rgba(0,0,0,0.5);
+width: 100%;
+height: 56px;
+color:white;
+}
+
+nav,.icons,.costumer{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.icons{
+    width:120px;
+  
+    justify-content: space-between;
+}
+.costumer{
+   
+        width: 280px;
+        padding-left: 2%;
+        justify-content: left;
+        text-transform: capitalize;
+}
+
+.costumer div{
+    padding-right:5px;
+}
+.costumer div:nth-child(3){
+    text-transform: lowercase;
+}
+.logo{
+width: 150px;
+margin-right: auto;
+margin-left:81px;
+font-size:20px;
+}
+.logo a{
+    color:white;
+text-transform: uppercase;
+
+}
+.logo:hover a{
+    color:rgba(50, 154, 101);
+    transition: 0.5s;
+}
+
+div a{ 
+    text-decoration: none;
+    color: rgba(50, 154, 101);
+    
+
+}
+.login:hover a,.signup:hover a{
+text-decoration: underline;
+transition: 1s;
+}
+
+.dialog{
+    width: 28px; height: 20px;
+    background: url(../images/css_sprites.png) -10px -10px; 
+}
+
+.dialog:hover{
+    background: url(../images/css_sprites.png) -58px -10px;
+   
+}
+.calc{
+    width: 19px; height: 19px;
+    background: url(../images/css_sprites.png) -106px -49px;
+}
+.calc:hover{
+    background: url(../images/css_sprites.png) -106px -10px;
+}
+   
+.compass{
+    width: 20px; height: 20px;
+    background: url(../images/css_sprites.png) -10px -50px;  
+ 
+}
+.compass:hover{
+    background: url(../images/css_sprites.png) -50px -50px;    
+}
+
+
+main{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    justify-items: center;     
+}
+.okno-forma{
+    
+    width: 444px;
+    height: 584px;
+    background-color:white;
+    border-radius: 10px;    
+    box-sizing: border-box;
+}
+.register{
+    display: flex;
+    flex-wrap:wrap;
+    justify-items: center;
+    text-transform:capitalize;
+    width:80%;
+    margin-left:11%;
+    box-sizing: border-box;
+    
+}
+.register div{
+    width:43%;
+    margin: 15px 12px 5px 10px;
+    box-sizing: border-box;
+}
+
+
+.log{
+text-align: right;
+}
+
+.fb{
+    width: 157px;
+    height:46px;
+    background-image:url(../images/facebook.png);
+    background-repeat: no-repeat;
+    background-position: 12% center;
+    background-color:#305db8;
+    border-radius:10px;    
+    font-size: 16px;
+    text-decoration:none;
+
+}
+
+
+.goog{
+    width: 157px;
+    height:46px;
+    background-image:url(../images/google.png);
+    background-repeat: no-repeat;
+    background-position: 8% center;
+    background-color: #df4a32;
+    border-radius:10px;
+    font-size: 16px;
+    text-decoration:none;
+}
+.fb div,.goog div{
+    display: block;
+    margin: 12px 28%;
+    border-left: 1px solid rgba(48, 47, 47, 0.3);
+    box-sizing: border-box;
+    padding-left: 20px;
+    text-decoration: none;
+    color: white;
+    line-height: 1.5;
+}
+.sign{
+    position: relative;
+}
+
+
+.sign::before {/*квадратик*/
+    content: "";
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    right: 194px;
+    top: 5px;
+    background-color:rgba(50, 154, 101);
+}
+.sign a, .log a{
+    display:block;
+    line-height: 1.5;/*не подпрыгивала строка*/
+}
+.sign a:hover, .log a:hover {
+    text-decoration: underline;  
+    transition: 1s;
+}
+.sign a:focus, .log a:focus{
+    font-size:20px;
+    color:rgba(67, 67, 67);    
+    line-height: 1.2;/*не подпрыгивала строка*/
+}
+.sign a:focus:hover, .log a:focus:hover{
+    text-decoration: none;  
+    transition: 1s;
+}
+
+.fb:hover{
+   background-color: #264b96;
+   transition: 1s;
+
+    }
+.goog:hover{
+    background-color: #c3412c;
+    transition: 1s;
+}
+
+
+
+.content {
+        margin: 0 auto;
+        padding: 1px 1px 1px 50px;
+	
+	}
+.content h3 {
+    color: rgb(105, 103, 103,0.4);
+    font: 20px bold;
+    margin: 5px 10px 5px 10px
+}
+.content h3:before,
+.content h3:after {
+	content: "";
+    position: relative;
+    display: inline-block;
+    width: 36%;
+    height: 1px;
+    vertical-align: middle;
+    background: rgb(105, 103, 103,0.4);
+    margin: 5px 10px 5px 10px;
+}
+
+
+::-webkit-input-placeholder {  color:rgba(190,190,190); }
+::-moz-placeholder          {  color:rgba(190,190,190); } /* Firefox 19+ */
+:-moz-placeholder           {  color:rgba(190,190,190); } /* Firefox 18- */
+:-ms-input-placeholder      {  color:rgba(190,190,190); }
+
+
+.content form {
+     margin: 0px; 
+     position: relative;      
+    }
+    
+.content form input[type="text"],
+.content form input[type="password"] {
+	border: 1px solid #c8c8c8;
+    color: rgba(67, 67, 67);
+    font: 14px sans-serif;
+    margin: 9px 0px 0px 13px;
+    padding: 15px 10px 15px 17px;
+    width: 75%;
+    border-radius: 5px;
+}
+.content form input[type="text"]:focus,
+.content form input[type="password"]:focus {
+	box-shadow: 0 5px 8px 0 #c8c8c8;
+	background-color: #fff;
+	border: 1px solid transparent; /*чтобы не подпрыгивала строка*/
+    outline: none;   
+  
+}
+
+.content form input[type="submit"] {
+	background: rgb(50,154,101);   
+    cursor: pointer;
+    color:white;
+    font: 16px  sans-serif;
+    width: 322px;
+    height: 46px;
+    margin: 0px 0 0px 12px;
+    border-radius:5px;
+    border:none;
+}
+.content form input[type="submit"]:hover{
+    background: rgb(33, 124, 77);
+    transition: 1s;
+}
+
+label{
+    width: 100%;
+    display:block;
+}
+.content form input[type="checkbox"]{
+    margin:15px; 
+} 
+
+.content a{
+    text-transform: capitalize;
+}
+
+
+.content form input[type=checkbox] /*стилизуем чекбокс*/
+ {  
+  visibility: hidden;  
+  }
+
+.content form input[type=checkbox]:before {
+    content: "";
+    color: transparent;
+    display: inline-block;
+    border: 1px solid #c8c8c8;
+    border-radius:3px;
+    font-size: 14px;
+    line-height: 22px;
+    margin: -6px 0px 0px -3px;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    vertical-align: middle;
+    transition: color ease .3s;    
+    visibility: visible;
+}
+.content form input[type=checkbox]:checked:before {
+        content: url(../images/checkbox.png);
+}
+
+label a:hover {
+    text-decoration: underline;
+}
