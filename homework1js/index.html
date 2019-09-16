@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
- <!-- 1. Обьяснить своими словами разницу между обьявлением переменных через var, let и const. 
+    <!-- 1. Обьяснить своими словами разницу между обьявлением переменных через var, let и const. 
       2. Почему объявлять переменную через var считается плохим тоном?
 
 
@@ -25,27 +25,33 @@
         рекомендованый в новом стандарте es6.
          -->
         
+    
     <script>
-        let userName = prompt("Ваше имя?");         
-        let userAge = prompt("Ваш возраст?");
         
-        if (userAge < 18) {
+    let userName = prompt("Ваше имя?");
+     while (userName.length <2 || !isNaN(userName)) {        
+        userName = prompt("Введите Ваше имя, чтобы продолжить");
+    }
+    let userAge = prompt("Ваш возраст?");
+    while (userAge.length = 0 || isNaN(userAge)) {
+        userAge = prompt("Введите Возраст, чтобы продолжить");
+    }    
+    if (userAge < 18) {
+        alert("You are not allowed to visit this website");
+    }
+    else if (userAge >= 18 && userAge <= 22) {
+
+        if (confirm("Are you sure you want to continue?") == false) {
             alert("You are not allowed to visit this website");
         }
-        else if (userAge > 18 && userAge <= 22) {           
-                       
-            if (confirm("Are you sure you want to continue?")==false) {
-                alert("You are not allowed to visit this website");
-            }
-            else {
-                alert(`welcome, ${userName}`);
-            }     
-            
-        }
         else {
-            alert(`welcome, ${userName}`);
+            alert("welcome, " + userName);
         }
-
+    }
+    else {
+        alert("welcome " + userName);
+    }
+  
     </script>
 </body>
 </html>
