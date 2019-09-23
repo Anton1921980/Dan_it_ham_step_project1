@@ -14,7 +14,7 @@
      while (userName.length <2 || !isNaN(userName)) {        
         userName = prompt("Введите настоящее имя");
     }
-    let userAge = prompt("Ваш возраст?");
+    let userAge = +prompt("Ваш возраст?");
     while (userAge.length <1 || isNaN(userAge)) {
         userAge = prompt("Введите настоящий возраст, чтобы продолжить");
     }    
