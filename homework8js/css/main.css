@@ -1,5 +1,5 @@
 .container {
-    background-color:blue;
+    background-color:lightblue;
     font-size: 25px;
     width: 350px;
     height: 150px;
@@ -7,20 +7,20 @@
     position: relative;
 }
 .price {
-    color: brown;
+    color: gray;
     font-size: 25px;
     position: absolute;
-    top: 50px;
-    left: 40px;
-    /* display: none; */
+    top: 60px;
+    left: 65px;
+    
 }
 .input {
-    width: 100px;
+    width: 120px;
     color: black;
-    height: 25px;
-    left: 135px;
+    height: 25px;    
     text-align: center;
-    top: 50px;
+    top: 60px;
+    left: 150px;
     outline: none;
     position: absolute;
     
@@ -30,59 +30,57 @@
     font-weight: bold;
     text-align: center;
     line-height: 35px;
-    width: 200px;
+    width: 210px;
     height: 35px;
-    border-radius:5px;
-    left: 48px;
-    top: 10px;
-    background-color: lavenderBlush;
+    border-radius: 15px;
+    left: 65px;
+    top: 11px;
+    background-color: lightgrey;
     position: absolute;
-    color: darkSlateGray;
     display: none;
 }
 
 .button {
     font-weight: bold;
-    font-size: 14px;
+    font-size: 12px;
     border-radius: 5px;
-    color: black;
     width: 20px;
     height: 20px;
-    background-color:lavenderBlush;
     position: absolute;
-    left: 227px;
-    top: 10px;
-    border: none;
+    left: 253px;
+    top: 11px;
+    border: 1px solid grey;
+    border-radius: 9px;
     outline: none;
     display: none;
+    background-color: lightgrey;
+
 }
 .wrong {
     font-size: 15px;
     font-weight: bold;
     position: absolute;
     left: 90px;
-    top: 90px;
-    color: black;
+    top: 110px;
+    color: red;
     display: none;
 }
 
 
-.clicked{
-    border:1px solid green;
-}
+
 .correct{
     display:block; 
     color: green;
 }
 
 .incorrect{
-    color:red;  
-    border:1px solid red;
+      
+    border-color: red;
     display: block;
 }
 
 .infocus{
-    border:3px solid green;
+    border:1px solid green;
 }
 
 
@@ -97,22 +95,3 @@
 
 
 
-/* .inpBorder {
-    border-color: green;
-}
-.plusAdd {
-    display: block;
-}
-.plusButton {
-    display: block;
-}
-.correct {
-    color: green;
-    border-color: green;
-    display: block;
-}
-.invalid {
-    color: red;
-    border-color: red;
-    display: block;
-} */
