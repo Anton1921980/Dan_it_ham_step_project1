@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <!-- ## Теоретический вопрос
+
+1. Опишите своими словами, как Вы понимаете, что такое обработчик событий.
+
+обработчик события это функция которая срабатывает когда событие произошло, события бывают с мышкой, клавиатурой, css, документом
+    -->
+    <div class="container">
+        <span class="price"> Price   </span>
+        <input type="number" class="input" autocomplete="off"/>
+        <span class="right"></span>
+        <button class="button">X</button>
+        <span class="wrong">Please enter correct price</span>
+    </div>
+
+<script>
+let input = document.querySelector('.input');
+let button = document.querySelector('.button');
+let wrong = document.querySelector('.wrong');
+let right = document.querySelector('.right');
+
+
+document.querySelector('.input').addEventListener('focus', function addBorder(){
+    input.classList.add('infocus')
+   })
+
+function clearAll(){
+    input.value = '';
+    right.classList.remove('correct');
+    button.classList.remove('correct');
+
+}
+
+input. addEventListener('blur', function (){
+    let price = document.querySelector('.input').value;
+    if(input.value > 0 && price){
+        right.classList.add('correct');
+        button.classList.add('correct');
+        right.innerHTML =  `The price is ${price} $.`;
+        `The price is $ ${price}.`
+    }
+    else {
+        input.classList.remove('infocus');
+        input.classList.remove('correct');
+        input.classList.add('incorrect');
+        wrong.classList.add('incorrect');
+        clearAll();
+    }
+})
+button.addEventListener('click', function() {
+  clearAll()
+ });
+
+</script>
+
+
+
+</body>
+</html>
+
+
+

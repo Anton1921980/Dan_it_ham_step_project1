@@ -1,0 +1,118 @@
+.container {
+    background-color:blue;
+    font-size: 25px;
+    width: 350px;
+    height: 150px;
+    margin: 0 auto;
+    position: relative;
+}
+.price {
+    color: brown;
+    font-size: 25px;
+    position: absolute;
+    top: 50px;
+    left: 40px;
+    /* display: none; */
+}
+.input {
+    width: 100px;
+    color: black;
+    height: 25px;
+    left: 135px;
+    text-align: center;
+    top: 50px;
+    outline: none;
+    position: absolute;
+    
+}
+.right {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 35px;
+    width: 200px;
+    height: 35px;
+    border-radius:5px;
+    left: 48px;
+    top: 10px;
+    background-color: lavenderBlush;
+    position: absolute;
+    color: darkSlateGray;
+    display: none;
+}
+
+.button {
+    font-weight: bold;
+    font-size: 14px;
+    border-radius: 5px;
+    color: black;
+    width: 20px;
+    height: 20px;
+    background-color:lavenderBlush;
+    position: absolute;
+    left: 227px;
+    top: 10px;
+    border: none;
+    outline: none;
+    display: none;
+}
+.wrong {
+    font-size: 15px;
+    font-weight: bold;
+    position: absolute;
+    left: 90px;
+    top: 90px;
+    color: black;
+    display: none;
+}
+
+
+.clicked{
+    border:1px solid green;
+}
+.correct{
+    display:block; 
+    color: green;
+}
+
+.incorrect{
+    color:red;  
+    border:1px solid red;
+    display: block;
+}
+
+.infocus{
+    border:3px solid green;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .inpBorder {
+    border-color: green;
+}
+.plusAdd {
+    display: block;
+}
+.plusButton {
+    display: block;
+}
+.correct {
+    color: green;
+    border-color: green;
+    display: block;
+}
+.invalid {
+    color: red;
+    border-color: red;
+    display: block;
+} */
