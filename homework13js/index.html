@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link href="styles/styles.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body id="body">
+    <div class="container">
+      <header>
+        <div class="logo">
+          <a href="#"><span>ra</span>mda.js</a>
+        </div>
+        <!-- кнопка тема -->
+        <input type="button" id="theme" value="Тема">
+        <div class="nav-top">
+          <ul>
+            <li><a href="#">functional programming</a></li>
+            <li><a href="#">ramda</a></li>
+            <li><a href="#">fantasy land spec</a></li>
+            <li><a href="">node.js<span>for all</span></a></li>
+          </ul>
+        </div>
+      </header>
+      <div class="main">
+        <div class="nav-left">
+          <ul>
+            <li><a href="#">ramda</a></li>
+            <li><a href="#">why ramda</a></li>
+            <li><a href="#">what`s different</a></li>
+            <li><a href="#">introductions</a></li>
+            <li><a href="#">philosophy</a></li>
+          </ul>
+        </div><!--убираем отступ между двумя inline-block
+       --><div class="big-pic">
+          <div class="big-pic-image"><img src="./images/top-img@1X.png" alt="главная картинка ">
+          </div>
+        </div>
+        <div class="text">
+          <p>
+            <span>Lorem ipsum</span>- далеко-далеко за словесными горами в стране
+            гласных и согласных живут рыбные тексты. Если пор маленький за
+            переписали рот знаках, проектах единственное на берегу. Вопрос
+            знаках то все себя до переписывается домах дороге пор.Толку ее
+            вопрос там подзаголовок ведущими использовало точках, текстами
+            своего рукопись дал за от всех сбить языком напоивший коварный путь,
+            страна заманивший они обеспечивает. Алфавит родного даже пор, на
+            берегу до составитель.
+          </p>
+
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat
+            eveniet, quod ratione ab aperiam dignissimos adipisci exercitationem
+            unde praesentium aut officiis laboriosam nam veritatis illum amet
+            dolorum similique aspernatur alias.Ducimus reiciendis adipisci
+            laborum mollitia tenetur sapiente alias perspiciatis! Totam cum
+            commodi incidunt rerum corporis voluptate repudiandae modi officiis,
+            nihil illo libero dicta fugit! Recusandae soluta velit distinctio
+            deleniti necessitatibus?
+          </p>
+        </div>
+      </div>
+    </div>
+
+      <footer>
+        <div class="nav-bottom">
+          <ul>
+            <li><a href="#">ramda</a></li>
+            <li><a href="#">why ramda</a></li>
+            <li><a href="#">what's different</a></li>
+            <li><a href="#">introductions</a></li>
+            <li><a href="#">phylosophy</a></li>            
+          </ul> 
+          <div class="copyright">copyright &#169 2018</div> 
+        </div>        
+      </footer>
+    
+
+<script>
+let theme = document.getElementById('theme');
+let body= document.getElementById('body');
+console.log(localStorage.getItem('themeStyle')); 
+if (localStorage.getItem('themeStyle')=='pink') {
+  body.style.background='pink';
+}
+else{ 
+  body.style.background='gold';
+  }
+changeTheme();
+function changeTheme(){    
+    theme.addEventListener('click',   
+    function colorChange() {
+      if (localStorage.getItem('themeStyle') == 'gold'){
+              body.style.background='pink';
+      localStorage.setItem('themeStyle','pink');
+      console.log(localStorage)
+      }
+      else{
+        body.style.background='gold';
+      localStorage.setItem('themeStyle', 'gold');
+      console.log(localStorage)
+      }      
+})
+}
+     
+    </script>
+
+ 
+  </body>
+</html>
