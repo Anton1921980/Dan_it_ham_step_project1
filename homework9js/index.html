@@ -92,26 +92,9 @@
     </ul>
 </div>
 
-<script>
-    const tabsTitle = document.querySelectorAll(".tabs li");
-    for (let i=0; i<tabsTitle.length; i++) {
-        tabsTitle[i].addEventListener('click', function() {            
-            const parentUl = this.closest(".tabs");
-            for (let i=0; i < parentUl.children.length; i++) {
-                parentUl.children[i].classList.remove("active");
-            }            
-            this.classList.add("active");           
-            const tabsContent = document.querySelectorAll(".centered-content .tabs-content li");
-            for (let i=0; i<tabsContent.length; i++) {
-                tabsContent[i].classList.remove("active");
-            }            
-            const tabId = this.dataset.target;           
-            console.log(tabId);            
-            const tab = document.getElementById(tabId);
-            tab.classList.add("active");
-        });
-    }
+
+   <script src="./script/main.js"></script>
     
-</script>
+
 </body>
 </html>
