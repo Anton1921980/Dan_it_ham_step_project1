@@ -32,8 +32,8 @@ header {
   background-color: black;
   justify-content: space-between;
   align-items: center;
-  color: rgba(24, 207, 171, 255);
-  opacity: 0.6;
+  background-color: hsla(0,0%,30%,0.8);
+
 }
 .center {
   display: block;
@@ -42,6 +42,9 @@ a {
   cursor: pointer;
   color: #ffffff;
   text-decoration: none;
+}
+nav div{
+  padding:20px;
 }
 .company-logo {
   display: flex;
@@ -76,13 +79,38 @@ a {
   left: 8px;
 }
 .hexagon {
-  width: 58px;
+    width: 58px;
     height: 67px;   
     background-color: #18cfab;
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     
 }
 
+.search button{
+    width: 0;
+    height: 0;
+    border: none;
+    background: #171a1c;
+    padding: 0;
+    cursor: pointer;
+    color: #fff;
+    transition: color 0.5s;
+    position: relative;
+    right: 160px;
+  
+}
+
+.search button:hover {
+  color: #18cfab;
+}
+
+.search button::after {
+  content: "\f002";
+  display: block;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 25px;
+}
 nav {
   display: flex;
   justify-content: space-between;
@@ -132,6 +160,7 @@ nav {
   box-sizing: border-box;
   padding: 0;
   background-color: #18cfab;
+  color:white;
 }
 
 #b2 {
@@ -166,14 +195,14 @@ nav {
 }
 .line1 {
   width: 76px;
-  height: 1px;
+  height: 2px;
   background-color: #18cfab;
   margin-left: 917px;
   margin-top: 37px;
 }
 .line2 {
   width: 76px;
-  height: 1px;
+  height: 2px;
   background-color: #18cfab;
   margin-left: 929px;
   margin-top: 3px;
@@ -213,9 +242,13 @@ nav {
 .tabs-title.active {
   background-color: #18cfab;
   color: #f0fcf9;
-  border: none;
-  text-align: center !important;
+  border: none;  
 }
+.tabs-title:hover{
+  background-color: #18cfab;
+    color: #ffffff;
+}
+
 .tabs-title.active::after{
    content: '';
     border: 12px solid transparent;
@@ -293,8 +326,7 @@ text-transform: capitalize;
 }
 
 .tabs2 {
-  display: flex;
-  width: 609px;
+  display: flex;  
   height: 58px;
   margin-left: 389px;
   
@@ -307,8 +339,7 @@ text-transform: capitalize;
   border: 1px solid #959697;
   border-left: none;
   text-align: center;
-  line-height: 58px;
-  box-sizing: border-box;
+  line-height: 58px;  
   padding-left: 20px;
   padding-right:20px ;
   box-sizing: border-box;
@@ -317,12 +348,12 @@ text-transform: capitalize;
   border-left: 1px solid #959697;
 }
 .tabs-title2:hover {
- 
+  box-shadow:  0px -3px 0px -1px rgba(24, 207, 171, 1);
   color: #18cfab;
   
 }
 .filtered{
-  border-top: 2px solid #18cfab;
+ box-shadow:  0px -3px 0px -1px rgba(24, 207, 171, 1);
   color: #18cfab;
 }
 .content-images {
@@ -349,12 +380,17 @@ text-transform: capitalize;
   border:none;
   margin-top:71px;
   margin-left:878px;
+  cursor:pointer;
+  color:white;
 }
-#showLess {
-  border:none;
-  margin-top:71px;
-  margin-left:878px;
+#myList li{
+  display:none;
 }
+
+#loadMore:hover {
+   color:lightblue;
+}
+
 
 .button span{
   font-size: 20px;
@@ -378,24 +414,6 @@ text-transform: capitalize;
 
 
 
-#myList li{
-   display:none;
-}
-#loadMore {
-   
-    cursor:pointer;
-}
-#loadMore:hover {
-    color:black;
-}
-#showLess {
-    color:red;
-    cursor:pointer;
-    display:none;
-}
-#showLess:hover {
-    color:black;
-}
 
 
 
@@ -565,12 +583,13 @@ footer {
   margin-bottom: 11px;
   text-align: center;
   position: relative;
+  
 }
 footer h2 {
   font-size: 14px;
   color: #a5a6a7;
   position: absolute;
-  top: 50px;
+  top: 34px;
   left: 800px;
 }
 
