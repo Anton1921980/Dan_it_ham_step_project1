@@ -55,7 +55,7 @@ function activateReview(index) {
 const tabsTitle = document.querySelectorAll(".tabs li");
 for (let i = 0; i < tabsTitle.length; i++) {
     tabsTitle[i].addEventListener('click', function () {
-        const removeActive = document.querySelectorAll(".centered-content li, .tabs-content li");
+        const removeActive = document.querySelectorAll(".tabs li, .tabs-content li");
         for (let i = 0; i < removeActive.length; i++) {
             removeActive[i].classList.remove("active");
         }
