@@ -365,16 +365,92 @@ text-transform: capitalize;
   box-sizing: border-box;
   margin-left: 389px;
 }
-.tabs-content2 li>{
+/* #myList li{
   width: 286px;
   height: 210px;
   margin-right:1px ;
+} */
+#myList li{
+  position: relative;
+}
+#box-hover {
+  width: 285px;
+  height: 207px;
+  background-color: #f8fcfe;
+  position: absolute;
+  opacity: 0;
+  display:none;
+  transition: 0.5s;
+  bottom: 4px;
 }
 
-.tabs-content2 li>img{
+#myList li:hover #box-hover {
+  opacity: 1;
+  display:block;
+}
+#myList li:hover {
+  box-shadow: 0px -5px 0px -1px rgba(24, 207, 171, 1);
+}
+.circle-white {
+  width: 41px;
+  height: 40px;
+  border: 1px solid #18cfab;
+  border-radius: 50%;
+  position: absolute;
+  top: 46px;
+  left: 146px;
+}
+.circle-colored {
+  width: 41px;
+  height: 40px;
+  border: 1px solid #18cfab;
+  border-radius: 50%;
+  position: absolute;
+  top: 46px;
+  left: 100px;
+}
+.circle-white:hover .fa-search {
+   color: #ffffff;
+}
+.circle-white:hover {
+  background-color: #18cfab;
+}
+.circle-colored:hover .fa-link {
+  color: #ffffff;
+}
+.circle-colored:hover {
+  background-color: #18cfab;
+}
+.changed-fa-icons {
+  margin-top: 13px;
+  margin-left: 13px;
+  color: #18cfab;
+}
+.box-info1 {
+  width: 260px;
+  height: 10px;
+  color: #18cfab;
+  font-size:16px;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: absolute;
+  top: 120px;
+  left: 80px;
+}
+.box-info2 {
+  width: 200px;
+  height: 13px;
+  color: #c5c7c8;
+  font-size: 14px;
+  position: absolute;
+  top: 150px;
+  left: 100px;
+}
+
+/* #myList li>img{
   width: 286px;
   height: 210px;
-}
+} */
 
 #loadMore {
   border:none;
@@ -435,10 +511,7 @@ text-transform: capitalize;
   padding-bottom: 43px;
   padding-left: 5px;
 }
-.commas {
-  padding-top: 69px;
-  padding-left: 520px;
-}
+
 .feedback-name {
   color: #18cfab;
   width: 100px;
@@ -579,21 +652,21 @@ text-transform: capitalize;
 footer {
   width: 1920px;
   height: 108px;
-  background-color: #22353f;
+  background-color: #22353f;  
   margin-bottom: 11px;
   text-align: center;
-  position: relative;
-  
+  position: relative;  
 }
 footer h2 {
-  font-size: 14px;
+  
   color: #a5a6a7;
   position: absolute;
   top: 34px;
   left: 800px;
+  font-size: 14px;
+  font-weight: 200;
 }
 
 footer span{
-  color: #18cfab;
-  font-size: 14px;
+  color: #18cfab;  
 }
