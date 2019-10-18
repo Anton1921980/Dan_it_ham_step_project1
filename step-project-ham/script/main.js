@@ -76,14 +76,21 @@ for (let i = 0; i < tabsTitle.length; i++) {
 
 
 
-$(document).ready(function () {
+$(document).ready(function () { 
+ 
+
     $('#myList li').hover(function(){
         console.log(this);
         let  hover= document.getElementById('box-hover')
         this.append(hover);
-       console.log(this);
-        $('#box-hover').show();
+        console.log(hover);
+        $('#box-hover').slideDown(400);        
+    }, 
+    function(){                
+        $('#box-hover').slideUp(200);   
+        $('#box-hover').stop(false, true); 
     })
+   
 
     size_li = $("#myList li").size();
     let x = 12;
