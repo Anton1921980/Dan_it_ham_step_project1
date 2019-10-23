@@ -9,25 +9,25 @@
     integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css" />
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+   
 </head>
 <body>
-    <header>
+    <header class="header">
         <section class="head">
             <a class="company-logo" href="#">
                 <div class="hexagon"></div>
                 <div class="logo-name"> <span class="logo">H</span>the<span class="name">Ham</span></div>
             </a>
             <nav>                
-                <div><a href="#">home</a></div>
-                <div><a href="#">about</a></div>
-                <div><a href="#">skills</a></div>
-                <div><a href="#">service</a></div>
-                <div><a href="#">work</a></div>
-                <div><a href="#">tesmonial</a></div>
-                <div><a href="#">blog</a></div>
-                <div><a href="#">team</a></div>
-                <div><a href="#">contact</a></div>
+                <a href="#">home</a>
+                <a href="#">about</a>
+                <a href="#">skills</a>
+                <a href="#">service</a>
+                <a href="#">work</a>
+                <a href="#">tesmonial</a>
+                <a href="#">blog</a>
+                <a href="#">team</a>
+                <a href="#">contact</a>
             </nav>
             <div class="search"><button></button></div>     
         </section>
@@ -36,24 +36,25 @@
                 <div class="center-subtitle">we are creative</div>
                 <div class="center-other">Just Buy And Enjoy These Awesome Features</div>
                 <div class="buttons">
-                    <button class="button" id="b1">explore now</button>
-                    <button class="button" id="b2">purchase now</button>
+                    <button class="button" id="explore">explore now</button>
+                    <button class="button" id="purchase">purchase now</button>
                 
                 </div>
             </section>        
     </header>
     <article class="customize">
         <ul>
-            <li><a href="#"><img src="./image/finger.png" alt="finger"><span>different theme option</span></a></li>
-            <li><a href="#"><img src="./image/ruby.png" alt="ruby"><span>fully customizable</span></a></li>
-            <li><a href="#"><img src="./image/lamp.png" alt="lamp"><span>unlimited support</span></a></li>
-            <li><a href="#"><img src="./image/device.png" alt="devices"><span>responsive all device</span></a></li>
+            <li>
+                <img src="./image/finger.png" alt="finger">
+                <span>different theme option</span>
+            </li>
+            <li><img src="./image/ruby.png" alt="ruby"><span>fully customizable</span></li>
+            <li><img src="./image/lamp.png" alt="lamp"><span>unlimited support</span></li>
+            <li><img src="./image/device.png" alt="devices"><span>responsive all device</span></li>
         </ul>
     </article>
     <section class="section-1">
         <div class="section-title">our services</div>
-        <div><hr class="line1"/></div>
-        <div><hr class="line2"/></div>             
             <ul class="tabs">
                 <li class="tabs-title active" data-target="first-tab-content">Web Design</li>
                 <li class="tabs-title" data-target="second-tab-content">Graphic Design</li>
@@ -111,15 +112,13 @@
       <div class="buy">
         <div class="buy-title">Everything is ready. just buy and install now</div>
         <div class="buy-subtitle">Smooth reliable, responsive ready, perfect portfolio, unique blog layout and many many options for you</div>    
-        <button class="button" id="b3">purchase now</button> 
+        <button class="button" id="buyer">purchase now</button> 
       </div> 
     </section>
     <section class="section-2">
-            <div class="section-title">Our amazing work</div>
-            <div><hr class="line1"/></div>
-            <div><hr class="line2"/></div>         
+            <div class="section-title">Our amazing work</div>                    
                 <ul class="tabs2">
-                    <li class="tabs-title2" data-id="1" >All</li>
+                    <li class="tabs-title2 filtered" data-id="1" >All</li>
                     <li class="tabs-title2" data-id="2" >Graphic design</li>
                     <li class="tabs-title2" data-id="3">Web design</li>
                     <li class="tabs-title2" data-id="4" >Landing page</li>
@@ -172,9 +171,7 @@
             <button class="button" id="loadMore"><span>+</span>load more</button>           
     </section>
     <section class="section-3">
-            <div class="section-title">breaking-news</div>
-            <div><hr class="line1"/></div>
-            <div><hr class="line2"/></div>       
+            <div class="section-title">breaking-news</div>               
             <section class="content-images" id="news-box">                
                 <div class="news">
                   <a href="#!"><img src="./image/news1.png" alt="">
@@ -239,10 +236,8 @@
     </section>
    
     <section class="section-4">
-            <div class="section-title">What People Say About theHam</div>
-            <div><hr class="line1"/></div>
-            <div><hr class="line2"/></div>    
-            <div class="line3"><img src="./image/quotes.png" alt="quotes"></div>
+            <div class="section-title">What People Say About theHam</div>            
+            <div class="quotes"><img src="./image/quotes.png" alt="quotes"></div>
         <div class="container">            
             <div class="review-container active" data-set="1">
                 <p class="feedback">Augue tempus ultricies luctus, quam dui laoreet sem, non dictum odio nisi quis massa.
@@ -287,6 +282,7 @@
 <footer>
   <h2> &copy; Copyright 2015 <span class="colored-ham">theHam</span>| &nbsp  All Rights Reserved</h2> 
 </footer>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
 <script src="./script/main.js"></script>   
 </body>
 </html>
